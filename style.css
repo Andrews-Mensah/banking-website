@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+*::selection{
+    background-color: rgb(254, 74, 104);
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background: rgb(246, 246, 249);
+    height: 100%;
+    width: auto;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: rgb(254, 74, 104);
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: center;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border: .2rem solid black;
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 5rem;
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    background: rgb(254, 74, 104);
+    border-color: rgb(254, 74, 104);
+    color: white;
+
+}
+
+.heading{
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 4rem;
+    color: rgb(11, 11, 11);
+    padding-bottom: 0;
+    margin-top: 5rem;
+}
+
+header .logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+
+
+header .navbar a {
+    color: white;
+    font-size: 2rem;
+    margin-left: 2rem;
+
+}
+
+header .navbar a:hover {
+    color: rgb(11, 11, 11);
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    background: url(../img/banner.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.about {
+    height: auto;
+    margin: 0;
+}
+
+.about-content {
+    min-height: 100vh;
+    /* width: 100vw; */
+    display: block;
+    align-content: center;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.about-heading {
+    padding-top: 7rem;
+    background-color: black;
+    color: white;
+    height: 20vh;
+}
+
+.about-body {
+    box-sizing: border-box;
+    padding-top: 5rem;
+}
+
+.about-body li {
+    padding-bottom: 1rem;
+}
+
+.contact-body {
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+
+
+
+form {
+    padding: 3rem 0;
+    margin: 1.5rem 0;
+}
+
+form input {
+    padding: 2rem;
+    height: 2rem;
+    width: 100rem;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.message {
+    height: 10rem;
+    width: 100rem;
+    border: 1px solid black;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+
+
+.content {
+    margin-top: 25rem;
+}
+
+.home .content span {
+    font-size: 3rem;
+    color: rgb(254, 74, 104);
+    margin-top: 12rem;
+
+
+}
+.home .content h3 {
+    font-size: 6rem;
+    color: black;
+    width: 60rem;
+}
+
+
+.what-we-do .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+   padding-left: 12rem; 
+
+}
+
+.what-we-do .box-container .box {
+    flex: 1 1 30rem;
+    margin: 1rem; 
+    overflow: hidden;
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.9);
+    height: 25rem;
+}
+
+.what-we-do .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.what-we-do .box-container .box .info{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    transform: scale(1.5);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.what-we-do .box-container .box:hover .info {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.what-we-do .box-container .box:hover img {
+    transform: scale(1.5)
+
+}
+
+.what-we-do .box-container .box .info h3{
+    font-size: 3rem;
+    color: rgb(254, 74, 104);
+}
+
+.what-we-do .box-container .box .info p{
+    font-size: 1.5rem;
+    color: #333; 
+    padding: 1rem 0;
+}
+
+.footer-section {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: inline-grid;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    grid-template-columns: 2fr 4fr 3fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section a {
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.footer-section .logo2 {
+    width: 3rem;
+    height: 3rem;
+    font-size: 5rem;
+    margin-left: 2.5rem;
+}
+
+i {
+    display: inline-block;
+    align-items: center;
+    margin-left: 3rem;
+    font-size: 2rem;
+}
+
+
+.sub-button {
+    height: 5rem;
+    width: 10rem;
+    background-color: rgb(254, 74, 104);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 1000;
+    cursor: pointer;
+
+}
+
+.contact-details {
+    display: block;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    height: 20rem;
+}
+
+.contact-details p { 
+    font-size: 2rem;
+}
+
+.empty {
+
+    display: block;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    height: 5rem;
+
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    height: 50rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+.personal-product {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.business-product {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+    margin: 4rem;
+    border-radius: 10px;
+    padding-top: 3rem;
+}
+
+.empty-container {
+    height: 15rem;
+}
+
+
+.ebank-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 35rem;
+    margin: 6rem;
+}
+
+.deposit {
+    border: 1px solid black;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.new-input{
+    width: 50rem;
+    height: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    border: 1px solid black;
+
+}
+
+.new-btn {
+    width: 15rem;
+    height: 5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.new-btn:hover {
+    background-color: rgb(254, 74, 104);
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width:1200px) {
+
+    html {
+        font-size: 55%;
+
+    }
+}
+    
+    
+@media (max-width:991px) {
+    header {
+            padding: 2rem 4%;
+    }
+
+}
+
+@media (max-width:786px) {
+    i {
+        display: flexbox;
+    }
+    
+    header .navbar {
+        position: absolute;
+        top:100%;
+        left:0;
+        right:0;
+        background-color: black;
+        padding: 2rem 0;
+    }
+
+    header .navbar a {
+        display: block;
+        background-color: white;
+        border-radius: .5rem;
+        color: white;
+        margin: 1.5rem 0;
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+        
+
+
+    }
+
+    
+}
+
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+
+    }
+} */
